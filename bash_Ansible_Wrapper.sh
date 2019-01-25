@@ -27,4 +27,4 @@ echo "Optional tags: $optional"
 echo "User: $user"
 echo "Control Machine: $HOSTNAME"
 
-cd ansible && ansible-playbook -i $environment -e Environment=$environment -e Service=$service -e Region=$region  ansible_template.yml $optional
+cd ansible && ansible-playbook -i $environment -e Environment=$environment -e Region=$region  ansible_template.yml $optional

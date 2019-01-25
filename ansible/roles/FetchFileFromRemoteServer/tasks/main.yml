@@ -1,0 +1,6 @@
+---
+# Store file into /tmp/fetched/host.example.com/tmp/somefile
+- name: Fetch file from remote Host
+  fetch:
+    src: /tmp/somefile
+    dest: /tmp/fetched

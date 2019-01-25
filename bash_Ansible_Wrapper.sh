@@ -1,7 +1,7 @@
 # This Shell Wrapper will be used to pass the Ansible Playboook command Variables based on which environment you wish to deploy too.
 #!/usr/bin/bash
 
-usage="Please provide parameters for Enviroment/Region Please refer to README.md"
+usage="Please provide parameters for -Enviroment/Region Please refer to README.md"
 user=$(whoami)
 while getopts "r:e:t" options; do
   case $options in

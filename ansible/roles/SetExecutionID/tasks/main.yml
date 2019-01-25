@@ -1,0 +1,9 @@
+---
+# With any piece of automation that will be run we should run a transaction log to track which build or run this was executed.
+# We should use this execution ID for filepaths if we are creating them to single out any one time the script has run
+- name: "Set execution ID"
+  shell: 'date "+%Y%m%d-%H%M%S"'
+  register: executionID
+
+- name: "Create execution directory"
+  file: path=/tmp/{{ executionID.stdout }} state=directory mode=0700

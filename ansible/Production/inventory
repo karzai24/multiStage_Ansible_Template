@@ -1,0 +1,14 @@
+[MASTER]
+localhost ansible_connection=local
+
+[Region01]
+[{HOSTNAME1}] ansible_host={{PRIVATEIP}} ansible_user=root ansible_port=22 ansible_ssh_private_key_file={{PATH/TO/KEY/ON/ANSIBLE/RUNNING/HOST}}
+[{HOSTNAME2}] ansible_host={{PRIVATEIP}} ansible_user=root ansible_port=22 ansible_ssh_private_key_file={{PATH/TO/KEY/ON/ANSIBLE/RUNNING/HOST}}
+
+[Region02]
+[{HOSTNAME1}] ansible_host={{PRIVATEIP}} ansible_user=root ansible_port=22 ansible_ssh_private_key_file={{PATH/TO/KEY/ON/ANSIBLE/RUNNING/HOST}}
+[{HOSTNAME2}] ansible_host={{PRIVATEIP}} ansible_user=root ansible_port=22 ansible_ssh_private_key_file={{PATH/TO/KEY/ON/ANSIBLE/RUNNING/HOST}}
+
+[Region3]
+[{HOSTNAME1}] ansible_host={{PRIVATEIP}} ansible_user=root ansible_port=22 ansible_ssh_private_key_file={{PATH/TO/KEY/ON/ANSIBLE/RUNNING/HOST}}
+[{HOSTNAME2}] ansible_host={{PRIVATEIP}} ansible_user=root ansible_port=22 ansible_ssh_private_key_file={{PATH/TO/KEY/ON/ANSIBLE/RUNNING/HOST}}

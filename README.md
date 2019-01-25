@@ -12,5 +12,5 @@ then map your ansilbe_temple.yml file to that role when you wish to execute.
 to execute this automation you will need to execute the bash_Ansible_Wrapper.sh with a few parameters like so:
 ./bash_Ansible_Wrapper.sh -r {{RegionFromInventory}} -e {{Environment}}
 
-You can run this script as a dry run by adding the -t flag at the end (-t stands for test)
+You can run this script as a dry run by adding the -t flag at the end (-t stands for test) like so:
 ./bash_Ansible_Wrapper.sh -r {{RegionFromInventory}} -e {{Environment}} -t
